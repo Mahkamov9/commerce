@@ -1,0 +1,64 @@
+{
+  "headline": {
+    "headline_text": "Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!",
+    "headline_btn": "ShopNow"
+  },
+  "seach_input": "What are you looking for?",
+
+  "nav": {
+    "home": "Home",
+    "contact": "Contact",
+    "about": "About",
+    "sing": "Sing Up"
+  },
+
+  "sidebar": {
+    "text1": "Women's fashion",
+    "text2": "Men’s Fashion",
+    "text3": "Electronics",
+    "text4": "Home & Lifestyle",
+    "text5": "Medicine",
+    "text6": "Sports & Outdoor",
+    "text7": "Baby’s & Toys",
+    "text8": "Groceries & Pets",
+    "text9": "Health & Beauty",
+    "subtext1": "Clothers",
+    "subtext2": "Shoes"
+  },
+
+  "caption": {
+      "text": "Today's",
+      "text2": "Categories",
+      "text3": "This Month"
+  },
+
+  "slider": {
+    "btn_text": "View All Products",
+    "btn_text2": "View All"
+  },
+
+  "timer": {
+    "days": "Days",
+    "hours": "Hours",
+    "minutes": "Minutes",
+    "seconds": "Seconds"
+  },
+
+  "product":{
+    "title1":"Browse By Category",
+    "title2":"Best Selling Products"
+
+  },
+
+  "categoriesSlider": {
+    "text1": "Categories",
+    "text2": "Enhance Your Music Experience",
+    "text3": "Buy Now!"
+
+  }
+
+
+
+
+
+}
