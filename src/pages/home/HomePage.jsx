@@ -9,6 +9,8 @@ import ProductSlider from '../../components/slider/ProductSlider';
 import BestProductSlider from '../../components/slider/BestProductSlider';
 import CategoriesSlider from '../../components/slider/CategoriesSlider';
 import ArrivalBox from '../../components/arrival/ArrivalBox';
+import Label from '../../components/label/Label';
+import { secure_icon, service_icon, support_icon } from '../../assets/icons/icons';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -75,6 +77,17 @@ export default function HomePage() {
             </div>
 
           </div>
+
+          {/* Label */}
+          <div className='my-14'>
+            <div className='flex justify-around'>
+              <Label image={service_icon} title={t("label.card1.text")} text={t("label.card1.title")} />
+              <Label image={support_icon} title={t("label.card2.text")} text={t("label.card2.title")} />
+              <Label image={secure_icon} title={t("label.card3.text")} text={t("label.card3.title")} />
+            </div>
+          </div>
+
+
         </div>
       </section>
     </>

@@ -4,14 +4,12 @@
     "headline_btn": "ShopNow"
   },
   "seach_input": "What are you looking for?",
-
   "nav": {
     "home": "Home",
     "contact": "Contact",
     "about": "About",
     "sing": "Sing Up"
   },
-
   "sidebar": {
     "text1": "Women's fashion",
     "text2": "Men’s Fashion",
@@ -25,65 +23,71 @@
     "subtext1": "Clothers",
     "subtext2": "Shoes"
   },
-
   "caption": {
-      "text": "Today's",
-      "text2": "Categories",
-      "text3": "This Month",
-      "text4": "Our Products",
-      "text5": "Featured"
-
+    "text": "Today's",
+    "text2": "Categories",
+    "text3": "This Month",
+    "text4": "Our Products",
+    "text5": "Featured"
   },
-
   "slider": {
     "btn_text": "View All Products",
     "btn_text2": "View All"
   },
-
   "timer": {
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",
     "seconds": "Seconds"
   },
-
-  "product":{
-    "title1":"Browse By Category",
-    "title2":"Best Selling Products",
-    "title3":"Explore Our Products",
-    "title4":"New Arrival"
-
+  "product": {
+    "title1": "Browse By Category",
+    "title2": "Best Selling Products",
+    "title3": "Explore Our Products",
+    "title4": "New Arrival"
   },
-
   "categoriesSlider": {
     "text1": "Categories",
     "text2": "Enhance Your Music Experience",
     "text3": "Buy Now!"
-
   },
-
   "arrival": {
-    "card1":{
+    "card1": {
       "title": "Playstation 5",
       "text": "Black and White version of the PS5 coming out on sale."
     },
-    "card2":{
+    "card2": {
       "title": "Women’s Collections",
       "text": "Featured woman collections that give you another vibe."
     },
-    "card3":{
+    "card3": {
       "title": "Speakers",
       "text": "Amazon wireless speakers"
     },
-    "card4":{
+    "card4": {
       "title": "Perfume",
       "text": "GUCCI INTENSE OUD EDP"
     }
+  },
+  "label": {
+    "card1": {
+      "text": "FREE AND FAST DELIVERY",
+      "title": "Free delivery for all orders over $140"
+    },
+    "card2": {
+      "text": "24/7 CUSTOMER SERVICE",
+      "title": "Friendly 24/7 customer support"
+    },
+    "card3": {
+      "text": "MONEY BACK GUARANTEE",
+      "title": "We reurn money within 30 days"
+    }
+  },
+  "footer": {
+    "col1": {
+      "text1": "Subscribe",
+      "text2": "Get 10% off your first order",
+      "text3": "Enter your email"
+    }
   }
-
-
-
-
-
-
 }
