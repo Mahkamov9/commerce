@@ -88,6 +88,31 @@
       "text1": "Subscribe",
       "text2": "Get 10% off your first order",
       "text3": "Enter your email"
+    },
+    "col2": {
+      "text1": "Support",
+      "text2": "111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.",
+      "text3": "exclusive@gmail.com",
+      "text4": "+88015-88888-9999"
+    },
+    "col3": {
+      "text1": "Account",
+      "text2": "My Account",
+      "text3": "Login / Register",
+      "text4": "Cart",
+      "text5": "Wishlist",
+      "text6": "Shop"
+    },
+    "col4": {
+      "text1": "Quick Link",
+      "text2": "Privacy Policy",
+      "text3": "Terms Of Use",
+      "text4": "FAQ",
+      "text5": "Contact"
+    },
+    "col5": {
+      "text1": "Download App",
+      "text2": "Save $3 with App New User Only"
     }
   }
 }

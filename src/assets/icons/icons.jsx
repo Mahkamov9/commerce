@@ -10,6 +10,11 @@ import support_icon from './support_icon.svg';
 import secure_icon from './secure_icon.svg';
 import send_icon from './icon-send.svg';
 
+import qr_icon from './qr_icon.svg';
+import play_market from './play_market.svg';
+import app_store from './app_store.svg';
 
 
-export {Logo, search, favorite, basket, drop, left, right, service_icon, support_icon, secure_icon, send_icon}
+
+
+export { Logo, search, favorite, basket, drop, left, right, service_icon, support_icon, secure_icon, send_icon, qr_icon, play_market, app_store }
