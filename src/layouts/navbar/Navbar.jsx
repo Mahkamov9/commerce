@@ -12,7 +12,7 @@ export default function Navbar() {
     <>
       <div className='bg-[#000] text-center h-[48px] flex items-center justify-center text-[#fff] '>
         <h1>{t("headline.headline_text")}</h1>
-        <a href="/" className='decoration-solid underline ml-3'>{t("headline.headline_btn")}</a>
+        <a href="/" className='decoration-solid underline ml-3 hover:no-underline'>{t("headline.headline_btn")}</a>
         <ChangeLanguage />
       </div>
 

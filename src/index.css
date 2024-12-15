@@ -28,3 +28,27 @@
   background-size: cover;
   width: 100%;
 }
+
+.arrival_image1{
+  background-image: url("./src/assets/images/ps5.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.arrival_image2{
+  background-image: url("./src/assets/images/women.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.arrival_image3{
+  background-image: url("./src/assets/images/speakers.png");
+  background-size: cover;
+  width: 100%;
+}
+
+.arrival_image4{
+  background-image: url("./src/assets/images/parfume.png");
+  background-size: cover;
+  width: 100%;
+}

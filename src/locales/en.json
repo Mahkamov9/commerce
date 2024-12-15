@@ -29,7 +29,10 @@
   "caption": {
       "text": "Today's",
       "text2": "Categories",
-      "text3": "This Month"
+      "text3": "This Month",
+      "text4": "Our Products",
+      "text5": "Featured"
+
   },
 
   "slider": {
@@ -46,7 +49,9 @@
 
   "product":{
     "title1":"Browse By Category",
-    "title2":"Best Selling Products"
+    "title2":"Best Selling Products",
+    "title3":"Explore Our Products",
+    "title4":"New Arrival"
 
   },
 
@@ -55,7 +60,27 @@
     "text2": "Enhance Your Music Experience",
     "text3": "Buy Now!"
 
+  },
+
+  "arrival": {
+    "card1":{
+      "title": "Playstation 5",
+      "text": "Black and White version of the PS5 coming out on sale."
+    },
+    "card2":{
+      "title": "Women’s Collections",
+      "text": "Featured woman collections that give you another vibe."
+    },
+    "card3":{
+      "title": "Speakers",
+      "text": "Amazon wireless speakers"
+    },
+    "card4":{
+      "title": "Perfume",
+      "text": "GUCCI INTENSE OUD EDP"
+    }
   }
+
 
 
 
