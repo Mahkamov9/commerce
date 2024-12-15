@@ -106,25 +106,20 @@ function CardSlider(props) {
     sliderRef.current.slickPrev();
   };
 
+
+
   const addLikes = (id) => {
     setProductData((prev) => {
-      // Ma'lumotni yangilab olish va like qiymatini o'zgartirish
       const updatedData = prev.map((item) =>
         item.id === id ? { ...item, like: !item.like } : item
       );
-
-      // O'zgargan itemni topish
       const likedItem = updatedData.find((item) => item.id === id);
-
-      // Agar like true bo'lsa, likeData arrayga qo'shish
       if (likedItem.like) {
         data.likeData = [...data.likeData, likedItem];
       }
-      // Agar like false bo'lsa, likeData arraydan olib tashlash
       else {
         data.likeData = data.likeData.filter((item) => item.id !== id);
       }
-
       console.log("Updated Like Data:", data.likeData);
       return updatedData;
     });
@@ -139,11 +134,21 @@ function CardSlider(props) {
     console.log(data)
   }
 
+  //CHAT GPT
+  // const addCurt = (id) => {
+  //   // Ma'lumotni topish
+  //   const curt = productData.find((item) => item.id === id);
 
+  //   // Agar arrayda mavjud bo'lmasa, qo'shamiz
+  //   if (!data.curtData.some((item) => item.id === id)) {
+  //     data.curtData.push(curt);
+  //     console.log("Added to Cart:", curt);
+  //   } else {
+  //     console.log("Item already in Cart:", curt);
+  //   }
 
-
-
-
+  //   console.log("Current Cart Data:", data.curtData);
+  // };
 
 
   function SampleNextArrow(props) {
