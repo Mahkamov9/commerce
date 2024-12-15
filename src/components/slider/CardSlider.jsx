@@ -106,24 +106,34 @@ function CardSlider(props) {
     sliderRef.current.slickPrev();
   };
 
-  const addLikes=(id)=>{
+  const addLikes = (id) => {
+    setProductData((prev) => {
+      // Ma'lumotni yangilab olish va like qiymatini o'zgartirish
+      const updatedData = prev.map((item) =>
+        item.id === id ? { ...item, like: !item.like } : item
+      );
 
-    // const newProductData=[...productData,{...likes,like:true}]
-    // console.log(newProductData)
-    setProductData(prev => prev.map((item)=>{
-      return item.id === id ? {...item,like:true}: {...item, like:false}
-    }))
-    console.log(productData)
-    const likes = productData.find((item)=>{
-      return  item.id === id
-    })
-    data.likeData.push(likes)
+      // O'zgargan itemni topish
+      const likedItem = updatedData.find((item) => item.id === id);
 
-  }
+      // Agar like true bo'lsa, likeData arrayga qo'shish
+      if (likedItem.like) {
+        data.likeData = [...data.likeData, likedItem];
+      }
+      // Agar like false bo'lsa, likeData arraydan olib tashlash
+      else {
+        data.likeData = data.likeData.filter((item) => item.id !== id);
+      }
 
-  const addCurt= (id)=>{
-    const curt = productData.find((item)=>{
-      return  item.id === id
+      console.log("Updated Like Data:", data.likeData);
+      return updatedData;
+    });
+  };
+
+
+  const addCurt = (id) => {
+    const curt = productData.find((item) => {
+      return item.id === id
     })
     data.curtData.push(curt)
     console.log(data)
@@ -189,8 +199,8 @@ function CardSlider(props) {
             </h3>
             <img src={item?.images} alt="" />
             <p>${item?.price}</p>
-            <button onClick={()=>addLikes(item.id)} className="bg-[red]">Add Like</button>
-            <button onClick={()=>addCurt(item.id)} className="bg-[blue]">Add Card</button>
+            <button onClick={() => addLikes(item.id)} className="bg-[red]">Add Like</button>
+            <button onClick={() => addCurt(item.id)} className="bg-[blue]">Add Card</button>
             <NavLink to={item?.id} className="bg-[yellow]">about</NavLink>
           </div>
         ))}
