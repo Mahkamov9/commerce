@@ -1,9 +1,65 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Slider from "react-slick";
-import { left, right } from "../../assets/icons/icons";
+import { left, phone, right } from "../../assets/icons/icons";
 import { useTranslation } from "react-i18next";
+import { v4 as uuidv4 } from 'uuid';
+
+
 
 function ProductSlider(props) {
+
+  const [productSliderData, setProductSliderData]= useState([
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "Phones"
+    },
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "Computers"
+    },
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "Watches"
+    },
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "Camera"
+    },
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "HeadPhone"
+    },
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "Person"
+    },
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "Trees"
+    },
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "Apples"
+    },
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "Toys"
+    },
+    {
+      id: uuidv4(),
+      image: phone,
+      text: "Clothers"
+    }
+  ])
 
   const { t } = useTranslation();
 
@@ -39,8 +95,8 @@ function ProductSlider(props) {
   const settings = {
     dots: false,
     infinite: true,
-    slidesToShow: 4,
-    slidesToScroll: 1,
+    slidesToShow: 7,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 2000,
     nextArrow: <SampleNextArrow />,
@@ -61,11 +117,12 @@ function ProductSlider(props) {
         </div>
       </div>
       <Slider ref={sliderRef} {...settings}>
-        {["Slide 1","Slide 2","Slide 3", "Slide 4", "Slide 5"].map((item, index) => (
-          <div key={index}>
-            <h3 className="bg-[#160b05e7] text-[#fff] text-center max-w-[270px] max-h-[350px] w-full h-full">
-              {item}
-            </h3>
+        {productSliderData?.map((item) => (
+          <div key={item?.id}>
+            <div className="group w-[150px] h-[150px] flex flex-col items-center justify-center border border-gray-300 cursor-pointer transition-all duration-300 hover:bg-red-500">
+              <img src={item?.image} alt="Img" className="w-10 h-10 transition-all duration-300 group-hover:invert" />
+              <p className="mt-3 text-black group-hover:text-white transition-all duration-300">{item?.text}</p>
+            </div>
           </div>
         ))}
       </Slider>

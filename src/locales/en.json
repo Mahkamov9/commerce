@@ -4,12 +4,14 @@
     "headline_btn": "ShopNow"
   },
   "seach_input": "What are you looking for?",
+
   "nav": {
     "home": "Home",
     "contact": "Contact",
     "about": "About",
     "sing": "Sing Up"
   },
+
   "sidebar": {
     "text1": "Women's fashion",
     "text2": "Men’s Fashion",
@@ -23,6 +25,7 @@
     "subtext1": "Clothers",
     "subtext2": "Shoes"
   },
+
   "caption": {
     "text": "Today's",
     "text2": "Categories",
@@ -30,27 +33,36 @@
     "text4": "Our Products",
     "text5": "Featured"
   },
+
+  "button":{
+    "text": "ADD TO CARD"
+  },
+
   "slider": {
     "btn_text": "View All Products",
     "btn_text2": "View All"
   },
+
   "timer": {
     "days": "Days",
     "hours": "Hours",
     "minutes": "Minutes",
     "seconds": "Seconds"
   },
+
   "product": {
     "title1": "Browse By Category",
     "title2": "Best Selling Products",
     "title3": "Explore Our Products",
     "title4": "New Arrival"
   },
+
   "categoriesSlider": {
     "text1": "Categories",
     "text2": "Enhance Your Music Experience",
     "text3": "Buy Now!"
   },
+
   "arrival": {
     "card1": {
       "title": "Playstation 5",

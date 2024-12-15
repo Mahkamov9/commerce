@@ -52,7 +52,7 @@ export default function HomePage() {
           {/* Our Products */}
           <Caption title={t("caption.text4")} />
           <div>
-            <CardSlider style="flex justify-between items-end my-5" time={<h2>{t("product.title3")}</h2>} />
+            <CardSlider style="flex justify-between font-bold text-[40px] items-end my-5" time={<h2>{t("product.title3")}</h2>} />
           </div>
 
 

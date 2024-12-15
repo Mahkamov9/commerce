@@ -1,12 +1,14 @@
 import React, { useContext, useRef, useState } from "react";
 import Slider from "react-slick";
-import { left, right } from "../../assets/icons/icons";
+import { card_star, left, right } from "../../assets/icons/icons";
 import EndTime from "../timer/EndTime";
 import { useTranslation } from "react-i18next";
 import { v4 as uuidv4 } from 'uuid';
-import { productImg } from "../../assets/images/images";
+import { chairImg, keyboardImg, lcdImg, productImg } from "../../assets/images/images";
 import { NavLink } from "react-router-dom";
 import { DataContext } from "../../App";
+import { FaRegHeart } from "react-icons/fa";
+import { FcLike } from "react-icons/fc";
 
 function CardSlider(props) {
 
@@ -16,7 +18,7 @@ function CardSlider(props) {
   const [productData, setProductData] = useState([
     {
       id: uuidv4(),
-      title: "Hello product",
+      title: "HAVIT HV-G92 Gamepad",
       images: productImg,
       sale_price: 120,
       star: 88,
@@ -26,73 +28,33 @@ function CardSlider(props) {
     },
     {
       id: uuidv4(),
-      title: "Hello product",
-      images: productImg,
-      sale_price: 120,
-      star: 88,
+      title: "AK-900 Wired Keyboard",
+      images: keyboardImg,
+      sale_price: 960,
+      star: 75,
       like: false,
-      price: 160,
-      present: 40,
+      price: 1160,
+      present: 35,
     },
     {
       id: uuidv4(),
-      title: "Hello product",
-      images: productImg,
-      sale_price: 120,
-      star: 88,
+      title: "IPS LCD Gaming Monitor",
+      images: lcdImg,
+      sale_price: 210,
+      star: 89,
       like: false,
-      price: 160,
-      present: 40,
+      price: 330,
+      present: 15,
     },
     {
       id: uuidv4(),
-      title: "Hello product",
-      images: productImg,
-      sale_price: 120,
-      star: 88,
+      title: "S-Series Comfort Chair ",
+      images: chairImg,
+      sale_price: 600,
+      star: 99,
       like: false,
-      price: 160,
-      present: 40,
-    },
-    {
-      id: uuidv4(),
-      title: "Hello product",
-      images: productImg,
-      sale_price: 120,
-      star: 88,
-      like: false,
-      price: 160,
-      present: 40,
-    },
-    {
-      id: uuidv4(),
-      title: "Hello product",
-      images: productImg,
-      sale_price: 120,
-      star: 88,
-      like: false,
-      price: 160,
-      present: 40,
-    },
-    {
-      id: uuidv4(),
-      title: "Hello product",
-      images: productImg,
-      sale_price: 120,
-      star: 88,
-      like: false,
-      price: 160,
-      present: 40,
-    },
-    {
-      id: uuidv4(),
-      title: "Hello product",
-      images: productImg,
-      sale_price: 120,
-      star: 88,
-      like: false,
-      price: 160,
-      present: 40,
+      price: 720,
+      present: 1,
     }
   ])
 
@@ -197,16 +159,30 @@ function CardSlider(props) {
         </div>
       </div>
       <Slider ref={sliderRef} {...settings}>
-        {productData?.map((item) => (
+        {productData.map((item) => (
           <div key={item?.id}>
-            <h3 className="bg-[#160b05e7] text-[#fff] text-center max-w-[270px] max-h-[350px] w-full h-full">
-              {item?.title}
-            </h3>
-            <img src={item?.images} alt="" />
-            <p>${item?.price}</p>
-            <button onClick={() => addLikes(item.id)} className="bg-[red]">Add Like</button>
-            <button onClick={() => addCurt(item.id)} className="bg-[blue]">Add Card</button>
-            <NavLink to={item?.id} className="bg-[yellow]">about</NavLink>
+            <div className="group p-1">
+              <div className="relative bg-[#F5F5F5] rounded-lg w-[270px] flex justify-center items-center h-[250px]">
+                <img src={item?.images} alt="Image" />
+                {/* add Like */}
+                <button onClick={() => addLikes(item?.id)} className="bg-white rounded-full p-3 absolute top-3 right-3">{item?.like ? (<FcLike size="25px" />) : (<FaRegHeart size="25px" />)}</button>
+                {/* add Basket */}
+                <button onClick={() => addCurt(item?.id)} className="absolute bottom-0 left-0 w-full bg-black/70 text-white text-center rounded-b-lg p-2 opacity-0 group-hover:opacity-100 transition duration-300">
+                  <p>{t("button.text")}</p>
+                </button>
+                {/* Sale */}
+                {item?.present === 0 ? (<span className="opacity-0">NO SALE</span>) : (<span className="text-[#fff] rounded-lg bg-[#db4444] py-1 px-2 absolute top-4 left-3 ">-{item?.present}%</span>) }
+              </div>
+              <p className="text-lg font-medium">{item?.title}</p>
+              <div className="flex gap-3 mt-2 text-[20px]">
+                <p className="text-[#DB4444]">${item?.sale_price}</p>
+                <p className="line-through text-[#3b3838]">${item?.price}</p>
+              </div>
+              <div className="flex items-center gap-2 mt-2">
+                <img src={card_star} alt="star" />
+                <span className="text-[#3b3838]">({item?.star})</span>
+              </div>
+            </div>
           </div>
         ))}
       </Slider>
