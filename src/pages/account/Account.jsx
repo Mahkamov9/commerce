@@ -6,7 +6,7 @@ export default function Account() {
       <section>
         <div className="container">
           <div className='h-screen'>
-            Account
+            Account add
           </div>
         </div>
       </section>
