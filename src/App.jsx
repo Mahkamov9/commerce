@@ -15,6 +15,8 @@ function App() {
     curtData:[]
   }
 
+
+
   return (
     <DataContext.Provider value={data}>
       <>

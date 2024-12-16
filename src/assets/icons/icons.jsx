@@ -15,8 +15,9 @@ import play_market from './play_market.svg';
 import app_store from './app_store.svg';
 import card_star from './card_star.svg';
 import phone from './phone.svg';
+import user from './user.svg';
 
 
 
 
-export { Logo, search, favorite, basket, drop, left, right, service_icon, support_icon, secure_icon, send_icon, qr_icon, play_market, phone, app_store, card_star }
+export { Logo, search, favorite, basket, user, drop, left, right, service_icon, support_icon, secure_icon, send_icon, qr_icon, play_market, phone, app_store, card_star }

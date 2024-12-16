@@ -1,15 +1,146 @@
 {
   "headline": {
-    "headline_text": "Barcha suzish kostyumlari uchun yozgi sotuv va bepul tezkor yetkazib berish - 50% chegirma!",
-    "headline_btn": "Hozir xarid qiling"
+    "headline_text": "Yazgi Aktsiya: Barcha Suv Kostyumlariga 50% chegirma va bepul tezkor yetkazib berish!",
+    "headline_btn": "Hozir sotib oling"
   },
-
   "seach_input": "Nimani qidiryapsiz?",
-
   "nav": {
     "home": "Bosh sahifa",
-    "contact": "Bog'lanish",
-    "about": "Biz haqimizda",
-    "sing": "Ro'yhatdan o'tish"
+    "contact": "Aloqa",
+    "about": "Haqida",
+    "sing": "Ro'yxatdan o'tish"
+  },
+  "sidebar": {
+    "text1": "Ayollar modasi",
+    "text2": "Erkaklar modasi",
+    "text3": "Elektronika",
+    "text4": "Uy va turmush tarz",
+    "text5": "Dori-darmon",
+    "text6": "Sport va ochiq havoda faoliyat",
+    "text7": "Bolalar va o'yinchoqlar",
+    "text8": "Oziq-ovqat va uy hayvonlari",
+    "text9": "Sog'liq va go'zallik",
+    "subtext1": "Kiymishlar",
+    "subtext2": "Poyabzal"
+  },
+  "caption": {
+    "text": "Bugungi",
+    "text2": "Kategoriyalar",
+    "text3": "Bu oy",
+    "text4": "Bizning mahsulotlar",
+    "text5": "Mashhur",
+    "text6": "Faqat siz uchun"
+  },
+  "button": {
+    "text": "Savatga qo'shish"
+  },
+  "slider": {
+    "btn_text": "Barcha mahsulotlarni ko'rish",
+    "btn_text2": "Barcha ko'rish"
+  },
+  "timer": {
+    "days": "Kun",
+    "hours": "Soat",
+    "minutes": "Daqiqalar",
+    "seconds": "Soniyalar"
+  },
+  "product": {
+    "title1": "Kategoriya bo'yicha ko'rish",
+    "title2": "Eng sotilgan mahsulotlar",
+    "title3": "Mahsulotlarimizni o'rganing",
+    "title4": "Yangi kelganlar"
+  },
+  "categoriesSlider": {
+    "text1": "Kategoriyalar",
+    "text2": "Musiqiy tajribangizni oshiring",
+    "text3": "Hozir sotib oling!"
+  },
+  "arrival": {
+    "card1": {
+      "title": "Playstation 5",
+      "text": "PS5 ning qora va oq versiyasi sotuvga chiqarilmoqda."
+    },
+    "card2": {
+      "title": "Ayollar kolleksiyalari",
+      "text": "Yangi ayollar kolleksiyalari, sizga yangi kayfiyat beradi."
+    },
+    "card3": {
+      "title": "Dinamika",
+      "text": "Amazon simsiz dinamikalari"
+    },
+    "card4": {
+      "title": "Parfyum",
+      "text": "GUCCI INTENSE OUD EDP"
+    }
+  },
+  "label": {
+    "card1": {
+      "text": "BEPUL VA TEZ YETKAZIB BERISH",
+      "title": "Barcha buyurtmalar uchun $140 dan yuqori bepul yetkazib berish"
+    },
+    "card2": {
+      "text": "24/7 MUSHKULOTLARSIZ XIZMAT",
+      "title": "Do'stona 24/7 mijozlar xizmati"
+    },
+    "card3": {
+      "text": "PULNI QAYTARISH GARANTISI",
+      "title": "30 kun ichida pulni qaytarib beramiz"
+    }
+  },
+  "about": {
+    "content": {
+      "text1": "Bizning hikoya",
+      "text2": "2015 yilda asos solingan, Exclusive — Janubiy Osiyoning etakchi onlayn savdo maydoni bo'lib, Bangladeshda faoliyat yuritmoqda. Keng qamrovli marketing, ma'lumotlar va xizmatlar yordamida Exclusive 10,500 sotuvchiga va 300 brendga ega bo'lib, mintaqada 3 milliondan ortiq mijozlarga xizmat ko'rsatmoqda.",
+      "text3": "Exclusive 1 milliondan ortiq mahsulotlarni taklif etadi, tez rivojlanib bormoqda. Exclusive foydalanuvchilarga turli kategoriya bo'yicha mahsulotlar taqdim etadi."
+    }
+  },
+  "favorite": {
+    "title": "Sevimlilar",
+    "button": "Hammasini sumkaga ko'chirish"
+  },
+  "basket": {
+    "table": {
+      "head": {
+        "text1": "Mahsulot",
+        "text2": "Narx",
+        "text3": "Miqdor",
+        "text4": "Jami"
+      },
+      "body": {
+        "text1": "Jadval tanasi matni 1"
+      }
+    }
+  },
+  "footer": {
+    "col1": {
+      "text1": "Obuna bo'ling",
+      "text2": "Birinchi buyurtmangizda 10% chegirma oling",
+      "text3": "Elektron pochta manzilingizni kiriting"
+    },
+    "col2": {
+      "text1": "Qo'llab-quvvatlash",
+      "text2": "111 Bijoy sarani, Dhaka, DH 1515, Bangladesh.",
+      "text3": "exclusive@gmail.com",
+      "text4": "+88015-88888-9999"
+    },
+    "col3": {
+      "text1": "Hisob",
+      "text2": "Mening hisobim",
+      "text3": "Kirish / Ro'yxatdan o'tish",
+      "text4": "Savatcha",
+      "text5": "Sevimlilar",
+      "text6": "Do'kon"
+    },
+    "col4": {
+      "text1": "Tezkor havolalar",
+      "text2": "Maxfiylik siyosati",
+      "text3": "Foydalanish shartlari",
+      "text4": "FAQ",
+      "text5": "Aloqa"
+    },
+    "col5": {
+      "text1": "Ilovani yuklab olish",
+      "text2": "Faqat yangi foydalanuvchilar uchun $3 tejang"
+    }
   }
 }

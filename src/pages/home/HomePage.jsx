@@ -11,6 +11,7 @@ import CategoriesSlider from '../../components/slider/CategoriesSlider';
 import ArrivalBox from '../../components/arrival/ArrivalBox';
 import Label from '../../components/label/Label';
 import { secure_icon, service_icon, support_icon } from '../../assets/icons/icons';
+import MultiSlider from '../../components/slider/MultiSlider';
 
 export default function HomePage() {
   const { t } = useTranslation();
@@ -52,7 +53,7 @@ export default function HomePage() {
           {/* Our Products */}
           <Caption title={t("caption.text4")} />
           <div>
-            <CardSlider style="flex justify-between font-bold text-[40px] items-end my-5" time={<h2>{t("product.title3")}</h2>} />
+            <MultiSlider style="flex justify-between font-bold text-[40px] items-end my-5" time={<h2>{t("product.title3")}</h2>} />
           </div>
 
 

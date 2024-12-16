@@ -7,7 +7,10 @@ import lcdImg from "./lcd.png";
 import chairImg from "./chair.png";
 import clothers from "./clothers.png";
 import bag from "./bag.png";
+import aboutImage from "./aboutImg.png";
+import noproduct from "./noproduct1.png";
+import register from "./register.png";
 
 
 
-export { banner, sliderItem, productImg, playStation, keyboardImg, lcdImg, chairImg, clothers, bag }
+export { banner, sliderItem, productImg, playStation, keyboardImg, lcdImg, chairImg, clothers, bag, aboutImage, noproduct, register }
